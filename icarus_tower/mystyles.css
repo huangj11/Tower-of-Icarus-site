@@ -1,0 +1,124 @@
+body {
+    font-family: 'Inconsolata', monospace;
+}
+
+p,
+h1{
+    padding: 80px 0px 0px 0px;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    z-index: 1;
+}
+
+p {
+    color: white;
+    font-size: 125%;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+
+/*section, img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    z-index: 0;
+}*/
+
+
+/* unvisited link */
+
+a:link {
+    color: lightblue;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: lightblue;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: lightgoldenrodyellow;
+}
+
+.start {
+    background-color: slategray;
+    /*padding: 200px 0px 100px 0px;*/
+    height: 100vh;
+    margin: 0 auto;
+    color: white;
+}
+
+.start,
+.basement,
+h2 {
+    text-align: center;
+    padding: 0;
+}
+
+.floor6 {
+    background-color: black;
+    height: 100vh;
+}
+
+.floor5 {
+    background-image: url(images/sun-anim.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.floor4 {
+    background-color: black;
+    height: 100vh;
+}
+
+.floor3 {
+    background-color: #7c8794;
+    background-image: url(images/babel3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    height: 100vh;
+}
+
+.floor2 {
+    background-color: #4e5053;
+    background-image: url(images/babel2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    height: 100vh;
+}
+
+.content2 {
+    width: 70%;
+    margin: 0 auto;
+    padding: 15% 0px 0px 0px;
+}
+
+.floor1 {
+    background-color: #262626;
+    background-image: url(images/babel1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    height: 100vh;
+}
+
+.format {
+    padding: 30px;
+}
+
+.bottom,
+.basement {
+    background-color: black;
+    height: 100vh;
+}

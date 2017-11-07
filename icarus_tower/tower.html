@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata: 300,400,500,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="mystyles.css">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+      <!-- load and instantiate Zenscroll -->
+    <script type="text/javascript" src="js/zenscroll-min.js"></script>
+        <!--https://github.com/zengabor/zenscroll-->
+
+    <!-- load and instantiate ScrollReveal -->
+    <script src="js/scrollreveal.min.js"></script>
+    <!--https://github.com/jlmakes/scrollreveal-->
+    <script>
+        window.sr = ScrollReveal();
+
+        // Add class to <html> if ScrollReveal is supported
+        if (sr.isSupported()) {
+            document.documentElement.classList.add('sr');
+        }
+    </script>
+
+    <style>
+        /* Ensure elements load hidden before ScrollReveal runs */
+        
+        .sr .fooReveal {
+            visibility: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="fooContainer">
+        <section class="start">
+            <a id="start"></a>
+            <div class="fooReveal">
+                <br>
+                <h1>Hello.</h1>
+                <p>Welcome to Icarus's Tower.</p>
+                <p>You may stay as long as you want, or, you may try to escape from the top of the tower.</p>
+                <p><a href="#bottom"><h2>Start</h2></a></p>
+            </div>
+        </section>
+
+        <section class="floor6">
+            <div class="fooReveal">
+                <a id="floor6"></a>
+<p>And then suddenly, you can fly no higher.</p>
+                <p> You feel yourself plummetting back into the darkness.</p>
+                <p><a href="#basement"><h2>Go</h2></a></p>
+            </div>
+        </section>
+
+        <section class="floor5">
+            <div class="fooReveal">
+                <a id="floor5"></a>
+
+                <p><a href="#floor6"><h2>Go</h2></a>
+            </div>
+        </section>
+
+        <section class="floor4">
+            <div class="fooReveal">
+                <a id="floor4"></a>
+                <p></p>
+                <p></p>
+                <p> You take off once more into the radiance of the sky, climbing higher and higher, far past the boundaries of the tower.</p>
+                <p><a href="#floor5"><h2>Go</h2></a></p>
+            </div>
+        </section>
+
+        <section class="floor3">
+            <div class="fooReveal">
+                <a id="floor3"></a>
+                <!--<img src="images/babel3.gif" />-->
+                <p> You can see the light from the top of the tower now, but you're no longer content to simply exit it.</p>
+                <p> You shed your wings one last time, and build your grandest pair yet, wings of the future.</p>
+                <p> They seem to become a part of you. </p>
+                <p><a href="#floor4"><h2>Go</h2></a></p>
+            </div>
+        </section>
+
+        <section class="floor2">
+            <div class="fooReveal">
+                <a id="floor2"></a>
+                <div class="content2">
+                    <p>On the next floor, there are no more gears. Instead, there is electricity, advanced machinery and powerful motors.</p>
+                    <p> You begin to think that with new wings, you can fly not only out of the tower, but beyond it.</p>
+                    <br><a href="#floor3"><h2>Go</h2></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="floor1">
+            <div class="fooReveal">
+                <div class="format">
+                    <a id="floor1"></a>
+                    <!-- <img src="images/babel1.gif" />-->
+                    <p> On the next floor, you find more materials, gears and cogs and sturdy canvas. </p>
+                    <p> So you discard your old wings, and set about making a new pair that will take you higher.</p>
+                    <p> You are sure to escape the tower now.</p>
+
+                    <p><a href="#floor2"><h2>Go</h2></a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bottom">
+            <div class="fooReveal">
+                <a id="bottom"></a>
+                <p>You wake up to darkness.</p>
+                <p>Fumbling around on your hands and knees, you find various materials on the ground--sticks, cloth, bits of rope. </p>
+                <p> Primitive materials.</p>
+                <p> You decide to build yourself a pair of wings so that you may fly out of the tower.</p>
+
+                <p><a href="#floor1"><h2>Go</h2></a></p>
+            </div>
+        </section>
+
+        <section class="basement">
+            <div class="fooReveal">
+                <a id="basement"></a>
+                <p></p>
+                <p> Be careful when flying too close to the sun.</p>
+                <p> Sometimes it blinds us.</p>
+                <p><a href="#start"><h2>Back to start</h2></a></p>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        sr.reveal('.fooReveal', {
+            container: '.fooContainer'
+        });
+    </script>
+</body>
+
+</html>
